@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>Products</b></h1>
+    <ul>
+        {% for Product in products%}
+        <li>
+            <h2>{{Product.name}}</h2>
+            <p> {{Product.description}}</p>
+            <p> {{Product.price}}</p>
+            <img src="{{Product.imge.url}}" alt="{{Product.name}}">
+        </li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
