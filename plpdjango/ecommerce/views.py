@@ -31,3 +31,7 @@ def customer_detail(request, pk):
     }
     return render(request, 'ecommerce/customer_detail.html', context)
 
+def home(request):
+    return render(request, 'ecommerce/home.html')
+
+

@@ -10,7 +10,7 @@
     <ul>
         {% for customer in customers %}
         <li>
-            <a href="{% url 'customer_detail' customer.pk %}">
+            <a href="{% url 'ecommerce:customer_detail' customer.pk %}">
                 {{customer.First_name}}{{customer.Last_name}}{{customer.Email}}
             </a>
         </li>
